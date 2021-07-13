@@ -1,1 +1,80 @@
 // Sidebar
+
+.sidebar {
+    // --- Sizing ---
+  padding: 51px 66.46px 60px 60px;
+  // height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__body {
+  }
+  &__logo {
+    img {
+    }
+    &:hover {
+    }
+    &:active {
+    }
+    &:focus {
+    }
+  }
+  // === Sidebar title ===
+  &__title {
+    // --- Fonts ---
+    font-size: 30px;
+    font-weight: bold;
+    // --- Positioning ---
+    margin-top: 60px;
+  }
+
+//   // === Wrapper for list and support section
+//   &__wrapper {
+//     // --- Positioning ---
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//   }
+
+  // === Sidebar list ===
+  &__list {
+    // --- Positioning ---
+    margin-top: 44.24px;
+  }
+
+  // === Sidebar list item ===
+  &__item {
+    // --- Positioning ---
+    margin-top: 24.3px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  // === Sidebar link ===
+  &__link {
+    // --- Positioning ---
+    display: flex;
+    align-items: center;
+    &:hover {
+    }
+    &:active {
+    }
+    &:focus {
+    }
+  }
+  &__icon {
+  }
+
+  // === Sidebar text (in list)
+  &__text {
+    // --- Positioning ---
+    margin-left: 10.1px;
+  }
+
+  // === Support block
+  &__support {
+      margin-top: 24.3px;
+  }
+}

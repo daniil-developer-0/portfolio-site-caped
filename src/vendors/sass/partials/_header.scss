@@ -1,1 +1,98 @@
 // Header
+.header {
+  // --- Positioning ---
+  position: absolute;
+  z-index: 0;
+  left: 252px;
+  right: 0;
+
+  // === Containers ===
+  .container_header {
+    // max-width: 1100px;
+  }
+
+  // === Content ===
+  &__body {
+    // --- Flex ---
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // --- Sizing ---
+    padding: 51px 52px;
+  }
+
+  .search {
+    // === Search Icon ===
+    .icon-search::before {
+      color: black;
+      font-size: 18.75px;
+    }
+
+    // === Search ===
+    input[type="text"] {
+      // === Input form ===
+      outline: 0;
+      border: none;
+      // --- Sizing ---
+      padding: 5px 50px 5px 0;
+      // --- Fonts ---
+      font-size: 17px;
+      font-weight: 500;
+      // --- Placeholder ---
+      &::placeholder {
+        color: #c7c7c7;
+        background-color: white;
+      }
+    }
+  }
+
+  .nav {
+    // === Navigation ===
+    // --- Positioning ---
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__list {
+      // --- Positioning ---
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &__item {
+        margin-left: 42px;
+    }
+    &__link {
+        // === Links in navigation bar ===
+      position: relative;
+      &:hover {
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 100%;
+          bottom: -7px;
+          border-bottom: 2px solid black;
+        }
+      }
+      &:active {
+      }
+      &:focus {
+      }
+    }
+    .menu {
+      display: flex;
+      margin-left: 50px;
+      [class^="icon-"] {
+        margin: 0 13.55px;
+      }
+      &__basket {
+        .icon-basket {
+        }
+      }
+      &__account {
+        .icon-person {
+        }
+      }
+    }
+  }
+}

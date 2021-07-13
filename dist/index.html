@@ -16,7 +16,7 @@
     <title>Wigs Caped</title>
 
     <!-- === Fonts === -->
-    <!-- Icon font -->
+    <!-- Icon font (Fontello) -->
     <link rel="stylesheet" href="./css/fontello.css" />
     <!-- Google Fonts (Poppins instead of Sofia Pro) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,9 +27,175 @@
     />
 
     <!-- === CSS === -->
+    <!-- === Main style === -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/fontello.css" />
+    
+    <!-- === IE Styles === -->
+    <!--[if IE]>
+      <link rel="stylesheet" type="text/css" href="./css/fontello-ie7.css" />
+    <![endif]-->
     
   </head>
   <body>
+    <!-- === Header === -->
+    <header class="header">
+      <div class="header__body container_header">
+        <div class="header__search search">
+          <form action="#" class="search__form">
+              <span class="icon-search"></span>
+              <input type="text" name="Search" id="header-search" placeholder="Search store">
+          </form>
+        </div>
+        <nav class="header__nav nav">
+            <ul class="nav__list _reset-list">
+                <li class="nav__item"><a href="#" class="nav__link _reset-link">products</a></li>
+                <li class="nav__item"><a href="#" class="nav__link _reset-link">story</a></li>
+                <li class="nav__item"><a href="#" class="nav__link _reset-link">manufacturing</a></li>
+                <li class="nav__item"><a href="#" class="nav__link _reset-link">packaging</a></li>
+            </ul>
+            <div class="nav__menu menu">
+                <div class="menu__basket"><span class="icon-basket"></span></div>
+                <div class="menu__account"><span class="icon-person"></span></div>
+            </div>
+        </nav>
+      </div>
+    </header>
+    
+
+    <div class="caped__container container">
+      <!-- === Sidebar === -->
+      <aside class="sidebar">
+        <div class="sidebar__body">
+          <a href="#" class="sidebar__logo _reset-link"
+            ><img src="./assets/img/icons/logo.jpg" alt="Caped Logo"
+          /></a>
+          <h2 class="sidebar__title">Explore</h2>
+          <ul class="_reset-list sidebar__list">
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link _reset-link"
+                ><img
+                  src="./assets/img/icons/emoji-1.jpg"
+                  alt=""
+                  width="21"
+                  height="21"
+                  class="sidebar__icon"
+                /><span class="sidebar__text">new in</span></a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link _reset-link"
+                ><img
+                  src="./assets/img/icons/emoji-2.jpg"
+                  alt=""
+                  width="21"
+                  height="21"
+                  class="sidebar__icon"
+                /><span class="sidebar__text">clothing</span></a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link _reset-link"
+                ><img
+                  src="./assets/img/icons/emoji-3.jpg"
+                  alt=""
+                  width="21"
+                  height="21"
+                  class="sidebar__icon"
+                /><span class="sidebar__text">shoes</span></a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link _reset-link"
+                ><img
+                  src="./assets/img/icons/emoji-4.jpg"
+                  alt=""
+                  width="21"
+                  height="21"
+                  class="sidebar__icon"
+                /><span class="sidebar__text">accessories</span></a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link _reset-link"
+                ><img
+                  src="./assets/img/icons/emoji-5.jpg"
+                  alt=""
+                  width="21"
+                  height="21"
+                  class="sidebar__icon"
+                /><span class="sidebar__text">activewear</span></a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link _reset-link"
+                ><img
+                  src="./assets/img/icons/emoji-6.jpg"
+                  alt=""
+                  width="21"
+                  height="21"
+                  class="sidebar__icon"
+                /><span class="sidebar__text">gifts & living</span></a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link _reset-link"
+                ><img
+                  src="./assets/img/icons/emoji-7.jpg"
+                  alt=""
+                  width="21"
+                  height="21"
+                  class="sidebar__icon"
+                /><span class="sidebar__text">inspiration</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__support">
+          <a href="#" class="sidebar__link _reset-link"
+            ><span class="sidebar__icon icon-support"></span
+            ><span class="sidebar__text">help center</span></a
+          >
+        </div>
+      </aside>
+      
+
+      <!-- === Hero === -->
+      <section class="hero">
+        <div class="hero__body">
+          <!-- --- First row --- -->
+          <div class="hero__sales">
+            <img src="./assets/img/row-img-1.svg" alt="" />
+          </div>
+          <div class="hero__people hero__people_1">
+            <img src="./assets/img/col-img-3.jpg" alt="" />
+          </div>
+          <div class="hero__people hero__people_2">
+            <img src="./assets/img/col-img-4.jpg" alt="" />
+          </div>
+          <!-- --- Second row --- -->
+          <div class="hero__summer">
+            <img src="./assets/img/row-img-2.svg" alt="" />
+          </div>
+          <!-- --- Third row --- -->
+          <div class="hero__people hero__people_3">
+            <img src="./assets/img/col-img-1.jpg" alt="" />
+          </div>
+          <div class="hero__people hero__people_4">
+            <img src="./assets/img/col-img-2.jpg" alt="" />
+          </div>
+          <div class="hero__trending">
+            <img src="./assets/img/row-img-3.svg" alt="" />
+          </div>
+          <!-- --- Fourth row -->
+          <div class="hero__buy-first-time _2col">
+            <img src="./assets/img/row-img-4.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      
+    </div>
+
     <!-- === Scripts === -->
     
   </body>
