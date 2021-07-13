@@ -1,0 +1,26 @@
+// Default Styles
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+// --- Reset lists ---
+ul._reset-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+// --- Reset links ---
+a._reset-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+// === Site-specific ===
+body {
+    // --- Fonts ---
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 15px;
+}

@@ -4,7 +4,8 @@
   "description": "Site for my portfolio",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx gulp build",
+    "dev": "npx gulp watch"
   },
   "keywords": [
     "site",
@@ -15,5 +16,16 @@
     "html"
   ],
   "author": "Coded by Daniil Shilo (Template by AR Shakir)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-include": "^2.4.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
